@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/EricNgor.github.io/static/css/main.a617e044.chunk.css",
-    "main.js": "/EricNgor.github.io/static/js/main.30ceb8ad.chunk.js",
-    "main.js.map": "/EricNgor.github.io/static/js/main.30ceb8ad.chunk.js.map",
-    "runtime-main.js": "/EricNgor.github.io/static/js/runtime-main.fe412231.js",
-    "runtime-main.js.map": "/EricNgor.github.io/static/js/runtime-main.fe412231.js.map",
-    "static/js/2.882daec3.chunk.js": "/EricNgor.github.io/static/js/2.882daec3.chunk.js",
-    "static/js/2.882daec3.chunk.js.map": "/EricNgor.github.io/static/js/2.882daec3.chunk.js.map",
-    "static/js/3.bd81373f.chunk.js": "/EricNgor.github.io/static/js/3.bd81373f.chunk.js",
-    "static/js/3.bd81373f.chunk.js.map": "/EricNgor.github.io/static/js/3.bd81373f.chunk.js.map",
-    "index.html": "/EricNgor.github.io/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/EricNgor.github.io/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.882daec3.chunk.js.LICENSE.txt": "/EricNgor.github.io/static/js/2.882daec3.chunk.js.LICENSE.txt"
+    "main.css": "/EricNgor.github.io/ericngor.github.io/static/css/main.a617e044.chunk.css",
+    "main.js": "/EricNgor.github.io/ericngor.github.io/static/js/main.30ceb8ad.chunk.js",
+    "main.js.map": "/EricNgor.github.io/ericngor.github.io/static/js/main.30ceb8ad.chunk.js.map",
+    "runtime-main.js": "/EricNgor.github.io/ericngor.github.io/static/js/runtime-main.b2eb9fe7.js",
+    "runtime-main.js.map": "/EricNgor.github.io/ericngor.github.io/static/js/runtime-main.b2eb9fe7.js.map",
+    "static/js/2.882daec3.chunk.js": "/EricNgor.github.io/ericngor.github.io/static/js/2.882daec3.chunk.js",
+    "static/js/2.882daec3.chunk.js.map": "/EricNgor.github.io/ericngor.github.io/static/js/2.882daec3.chunk.js.map",
+    "static/js/3.bd81373f.chunk.js": "/EricNgor.github.io/ericngor.github.io/static/js/3.bd81373f.chunk.js",
+    "static/js/3.bd81373f.chunk.js.map": "/EricNgor.github.io/ericngor.github.io/static/js/3.bd81373f.chunk.js.map",
+    "index.html": "/EricNgor.github.io/ericngor.github.io/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/EricNgor.github.io/ericngor.github.io/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.882daec3.chunk.js.LICENSE.txt": "/EricNgor.github.io/ericngor.github.io/static/js/2.882daec3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fe412231.js",
+    "static/js/runtime-main.b2eb9fe7.js",
     "static/js/2.882daec3.chunk.js",
     "static/css/main.a617e044.chunk.css",
     "static/js/main.30ceb8ad.chunk.js"
