@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import ProjectLink from './ProjectLink';
 // import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 import './portfolio.css';
+import { OverridedMixpanel } from 'mixpanel-browser';
 // import React, { useState, useEffect, useRef } from 'react';
 export type ProjectLinkDetails = {
   type: string;
@@ -45,7 +46,7 @@ const projects: ProjectDetails[] = [
   // }
 ];
 
-const Portfolio: React.FC = () => {
+const Portfolio: React.FC<{mixpanel: OverridedMixpanel}> = ({mixpanel}) => {
   useEffect(() => { // []
     document.title = 'Portfolio | Eric Ngor';
     // const projects: ProjectDetails[] = [{
@@ -87,7 +88,7 @@ const Portfolio: React.FC = () => {
                 <article className="details-box">
                   <p className="description">{project.description}</p>
                   <div className="buttons">
-                    <ProjectLink linkDetails={project.linkDetails} />
+                    <ProjectLink linkDetails={project.linkDetails} mixpanel={mixpanel} />
                     {/* {project.projectLink} */}
                     {/* <a href="/" className="view-project">
                       View Project

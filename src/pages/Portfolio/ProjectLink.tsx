@@ -1,3 +1,4 @@
+import { OverridedMixpanel } from 'mixpanel-browser';
 import React from 'react';
 import { ArrowUpRight } from 'react-feather';
 import { Link } from 'react-router-dom';
@@ -7,6 +8,7 @@ import './project_link.css';
 
 type ProjectLinkProps = {
   linkDetails: ProjectLinkDetails,
+  mixpanel: OverridedMixpanel
 }
 
 const linkContent: React.ReactNode = (
@@ -16,29 +18,28 @@ const linkContent: React.ReactNode = (
   </>
 )
 
-const ProjectLink = ({linkDetails}: ProjectLinkProps): JSX.Element => {
+const ProjectLink = ({linkDetails, mixpanel}: ProjectLinkProps): JSX.Element => {
   return (
     <>
       {linkDetails.type === 'external' &&
-        <a href={linkDetails.location} className="project-link">
+        <a 
+          href={linkDetails.location} 
+          className="project-link"
+          onClick={() => mixpanel.track('Clicked project link', { _location: linkDetails.location })}
+        >
           {linkContent}
         </a>
       }
       {linkDetails.type === 'internal' &&
-        <Link to={linkDetails.location} className="project-link">
+        <Link 
+          to={linkDetails.location} 
+          className="project-link"
+          onClick={() => mixpanel.track('Clicked project link', { _location: linkDetails.location })}
+        >
           {linkContent}
         </Link>
       }
     </>
-    // {linkDetails.type == 'external' &&
-    //   <a href="/" className="project-link">
-
-    //   </a>
-    // }
-    // {}
-    // <div className="project-link">
-    //   {linkDetails.type}
-    // </div>
   );
 }
 

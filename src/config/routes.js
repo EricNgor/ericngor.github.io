@@ -1,6 +1,11 @@
 import Home from '../pages/Home';
 import Portfolio from '../pages/Portfolio';
 import Resume from '../pages/Resume';
+import mixpanel from 'mixpanel-browser';
+const initMixpanel = async () => {
+  await mixpanel.init(process.env.REACT_APP_MIXPANEL_TOKEN);
+}
+initMixpanel();
 
 export const routes = [
   {
@@ -9,7 +14,7 @@ export const routes = [
   },
   {
     path: '/projects',
-    element: <Portfolio />
+    element: <Portfolio mixpanel={mixpanel}/>
   },
   {
     path: '/resume',
