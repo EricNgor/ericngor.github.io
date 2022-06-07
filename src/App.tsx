@@ -1,27 +1,31 @@
-import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-// import { Nav } from './components';
-import Nav from "./components/Nav/Nav";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 import { routes } from './config/routes';
-import { v4 as uuid } from 'uuid';
+import mixpanel from 'mixpanel-browser';
+// import { MixpanelConsumer } from 'react-mixpanel';
+import './style.css';
 
-function App() {
-  useEffect(() => { // []
-    console.log('routes:', routes);
-  }, []);
+const initMixpanel = async (): Promise<void> => {
+  await mixpanel.init(process.env.REACT_APP_MIXPANEL_TOKEN);
+};
+initMixpanel();
+
+function App(): React.ReactNode {
   return (
     <Router>
-      <Nav />
+      <Navigation mixpanel={mixpanel} />
       <Routes>
         {routes.map((route) => (
           <Route
-            key={uuid()}
+            key={route.path}
             path={route.path}
             element={route.element}
           />
         ))}
       </Routes>
+      <Footer />
     </Router>
   );
 }

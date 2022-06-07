@@ -1,1 +1,7 @@
 install typescript w/ react types: npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest @types/react-router-dom
+default name servers: [
+  ns-cloud-d1.googledomains.com,
+  ns-cloud-d2.googledomains.com,
+  ns-cloud-d3.googledomains.com,
+  ns-cloud-d4.googledomains.com
+]

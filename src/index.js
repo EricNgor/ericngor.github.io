@@ -1,14 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import mixpanel from 'mixpanel-browser';
+// import { MixpanelProvider, MixpanelConsumer } from 'react-mixpanel';
 
-ReactDOM.render(
+
+mixpanel.init(process.env.REACT_APP_MIXPANEL_TOKEN);
+
+const root = createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    {/* <MixpanelProvider mixpanel={mixpanel}> */}
+      <App />
+    {/* </MixpanelProvider> */}
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

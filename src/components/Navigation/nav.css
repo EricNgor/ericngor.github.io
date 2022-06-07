@@ -1,0 +1,5 @@
+.nav-component {
+  display: flex;
+  background: hsl(var(--main-hue) 100% 36%);
+  height: 100px;
+}

@@ -3,8 +3,7 @@
 ## New technologies
 - React 18
 - Less
-- Redux
-- Typescript
+- TypeScript
 
 # Getting Started with Create React App
 

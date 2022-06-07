@@ -1,0 +1,104 @@
+.portfolio-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat, sans-serif;
+  padding: 2rem 0 4rem;
+  --project-height: calc(100vh - var(--nav-height));
+}
+.portfolio-component h1 {
+  font-size: 4rem;
+}
+.portfolio-component h1.main-header {
+  margin: 15% 0;
+}
+.portfolio-component .container {
+  width: 100vw;
+  display: flex;
+}
+.portfolio-component .projects-container {
+  flex: 0 1 40%;
+}
+.portfolio-component .projects-container .project {
+  min-height: var(--project-height);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-component .projects-container .project .project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-component .projects-container .project .project-details .name {
+  margin: 0 1.5rem 1.5rem;
+  text-align: center;
+  font-weight: normal;
+}
+.portfolio-component .projects-container .project .project-details .involvement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  width: 60%;
+  text-align: center;
+}
+.portfolio-component .projects-container .project .project-details .technologies {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.portfolio-component .projects-container .project .project-details .technologies .technology {
+  padding: 0.5rem;
+  background-color: var(--dark3);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 var(--dark1);
+}
+.portfolio-component .projects-container .project .project-details .details-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24rem;
+  height: 12rem;
+  padding: 2rem;
+}
+.portfolio-component .projects-container .project .project-details .details-box p {
+  font-size: 1.1rem;
+}
+.portfolio-component .projects-container .project .project-details .details-box .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.portfolio-component .projects-container .project .project-details .details-box .buttons .view-project {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.portfolio-component .projects-container .project .project-details .details-box .buttons .case-study {
+  width: fit-content;
+}
+.portfolio-component .project-graphic-container {
+  flex: 0 1 auto;
+  position: sticky;
+  top: var(--nav-height);
+  height: var(--project-height);
+}
+.portfolio-component .project-graphic-container .project-graphic-box {
+  height: var(--project-height);
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  z-index: 2;
+}
+.portfolio-component .project-graphic-container .project-graphic-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}

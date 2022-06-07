@@ -1,0 +1,34 @@
+.resume-component {
+  padding: 2rem;
+  .resume-container {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    margin-bottom: 1rem;
+    #resume {
+      width: 70%;
+      height: 85vh;
+    }
+    
+    .mobile-resume-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      a {
+        text-decoration: none;
+        color: hsl(var(--main-hue), 50%, 50%);
+      }
+
+      img#resume {
+        width: 80vw;
+        height: auto;
+      }
+    }
+    
+  }
+  p {
+    text-align: center;
+  }
+}

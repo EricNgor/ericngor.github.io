@@ -1,0 +1,30 @@
+.resume-component {
+  padding: 2rem;
+}
+.resume-component .resume-container {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  margin-bottom: 1rem;
+}
+.resume-component .resume-container #resume {
+  width: 70%;
+  height: 85vh;
+}
+.resume-component .resume-container .mobile-resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.resume-component .resume-container .mobile-resume-container a {
+  text-decoration: none;
+  color: hsl(var(--main-hue), 50%, 50%);
+}
+.resume-component .resume-container .mobile-resume-container img#resume {
+  width: 80vw;
+  height: auto;
+}
+.resume-component p {
+  text-align: center;
+}

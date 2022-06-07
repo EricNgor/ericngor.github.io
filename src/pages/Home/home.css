@@ -1,0 +1,41 @@
+.home-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark1);
+  color: var(--theme-light);
+}
+.home-component .main-box {
+  margin-top: 4rem;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-component .main-box h1 {
+  font-size: 8rem;
+  margin-bottom: 2rem;
+}
+.home-component .main-box .links {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+}
+.home-component .main-box .links a {
+  color: hsl(var(--main-hue) 25% 25%);
+}
+.home-component .main-box .links a:hover {
+  color: hsl(var(--main-hue) 25% 50%);
+}
+.home-component .about-box {
+  margin-top: 4rem;
+  width: 75vw;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-component .about-box h1 {
+  font-size: 4rem;
+}
