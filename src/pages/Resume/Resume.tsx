@@ -9,6 +9,7 @@ const Resume: React.FC = () => {
   return (
     <div className="resume-component">
       <div className="resume-container">
+        <a href="Eric-Ngor-Resume.pdf" download>Download Resume PDF</a>
         <object
           id="resume"
           data="Eric-Ngor-Resume.pdf#zoom=FitH"
@@ -16,8 +17,9 @@ const Resume: React.FC = () => {
           title="Resume"
           >
           <div className="mobile-resume-container">
-            <a href="Eric-Ngor-Resume.pdf" download>Download Resume PDF</a>
-            <img src="Eric-Ngor-Resume.jpg" id="resume" alt="Resume" />
+            <a href="Eric-Ngor-Resume.jpg" download="Eric-Ngor-Resume.jpg" title="Resume">
+              <img src="Eric-Ngor-Resume.jpg" id="resume" alt="Resume" />
+            </a>
           </div>
         </object>
       </div>
