@@ -3,9 +3,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './navigation.css';
 
-type NavItem = {
+interface NavItem {
   name: string;
-  location: string
+  location: string;
 }
 
 const navItems: NavItem[] = [
@@ -14,14 +14,14 @@ const navItems: NavItem[] = [
     location: '/'
   },
   {
-    name: 'Projects',
-    location: '/projects'
+    name: 'Portfolio',
+    location: '/portfolio'
   },
   {
     name: 'Resume',
     location: '/resume'
   }
-]
+];
 
 const Navigation: React.FC<{mixpanel: OverridedMixpanel}> = ({mixpanel}) => {
   return (

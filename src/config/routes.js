@@ -13,7 +13,7 @@ export const routes = [
     element: <Home />,
   },
   {
-    path: '/projects',
+    path: '/portfolio',
     element: <Portfolio mixpanel={mixpanel}/>
   },
   {

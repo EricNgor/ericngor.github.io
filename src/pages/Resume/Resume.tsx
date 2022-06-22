@@ -3,7 +3,7 @@ import './resume.css';
 
 const Resume: React.FC = () => {
   useEffect(() => { // []
-    document.title = 'Resume | Eric Ngor';
+    document.title = 'Resume - Eric Ngor';
   }, []);
   
   return (
@@ -15,7 +15,7 @@ const Resume: React.FC = () => {
           data="Eric-Ngor-Resume.pdf#zoom=FitH"
           type="application/pdf"
           title="Resume"
-          >
+        >
           <div className="mobile-resume-container">
             <a href="Eric-Ngor-Resume.jpg" download="Eric-Ngor-Resume.jpg" title="Resume">
               <img src="Eric-Ngor-Resume.jpg" id="resume" alt="Resume" />
@@ -23,7 +23,7 @@ const Resume: React.FC = () => {
           </div>
         </object>
       </div>
-      <p>Last Updated 6/6/22</p>
+      <p>Last Updated 6/22/22</p>
     </div>
   );
 }

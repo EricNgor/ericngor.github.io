@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { GitHub, Linkedin } from 'react-feather';
 import './home.css';
 
 const Home: React.FC = () => {
+  useEffect(() => { // []
+    document.title = 'Eric Ngor';
+  }, []);
   // const [age, setAge] = useState<number>(0);
 
   // useEffect(() => { // []

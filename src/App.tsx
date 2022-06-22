@@ -8,7 +8,7 @@ import mixpanel from 'mixpanel-browser';
 import './style.css';
 
 const initMixpanel = async (): Promise<void> => {
-  await mixpanel.init(process.env.REACT_APP_MIXPANEL_TOKEN);
+  await mixpanel.init(process.env.REACT_APP_MIXPANEL_TOKEN || '');
 };
 initMixpanel();
 

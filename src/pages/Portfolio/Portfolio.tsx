@@ -4,7 +4,7 @@ import ProjectLink from './ProjectLink';
 import './portfolio.css';
 import { OverridedMixpanel } from 'mixpanel-browser';
 // import React, { useState, useEffect, useRef } from 'react';
-export type ProjectLinkDetails = {
+export interface ProjectLinkDetails {
   type: string;
   location: string;
 }
@@ -48,7 +48,7 @@ const projects: ProjectDetails[] = [
 
 const Portfolio: React.FC<{mixpanel: OverridedMixpanel}> = ({mixpanel}) => {
   useEffect(() => { // []
-    document.title = 'Portfolio | Eric Ngor';
+    document.title = 'Portfolio - Eric Ngor';
     // const projects: ProjectDetails[] = [{
     //   name: 'PathFinder',
     //   role: 'Full Stack Engineer & Front End Lead',
