@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   
   return (
     <footer className="footer-component">
-      © Eric Ngor 2022
+      © Eric Ngor 2023
     </footer>
   );
 }
