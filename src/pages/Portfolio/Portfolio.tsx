@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import ProjectLink from './ProjectLink';
-// import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 import './portfolio.css';
 import { OverridedMixpanel } from 'mixpanel-browser';
-// import React, { useState, useEffect, useRef } from 'react';
 export interface ProjectLinkDetails {
   type: string;
   location: string;
@@ -29,13 +27,20 @@ const projects: ProjectDetails[] = [
       type: 'external',
       location: 'https://pathfinder.fyi'
     },
-    // projectLink: 
-    //   <a href="https://pathfinder.fyi" className="view-project">
-    //     View Project
-    //     <ArrowUpRight size="24" />
-    //   </a>,
     imgLink: 'assets/pathfinder/Page1.png'
   },
+  {
+    name: 'Lottery Simlulator',
+    role: 'Developer',
+    date: 'Mid 2021',
+    technologies: ['Processing', 'Java'],
+    description: 'Program that simulates lottery drawings from either Powerball or Mega Millions rules.',
+    linkDetails: {
+      type: 'internal',
+      location: '/project/lottery-simulator'
+    },
+    imgLink: 'assets/pathfinder/stories.jpg'
+  }
   // {
   //   name: 'The Odin Project',
   //   role: '',
@@ -49,20 +54,8 @@ const projects: ProjectDetails[] = [
 const Portfolio: React.FC<{mixpanel: OverridedMixpanel}> = ({mixpanel}) => {
   useEffect(() => { // []
     document.title = 'Portfolio - Eric Ngor';
-    // const projects: ProjectDetails[] = [{
-    //   name: 'PathFinder',
-    //   role: 'Full Stack Engineer & Front End Lead',
-    //   date: 'Mid 2021 - present',
-    //   imgLink: ''
-    // }];
-    // console.log(projects)
-
   }, []);
 
-  // function handleScroll(event: React.UIEvent<HTMLDivElement>): void { 
-
-  // }
-  
   return (
     <div 
       className="portfolio-component"
